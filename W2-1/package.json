@@ -6,8 +6,6 @@
   },
   "dependencies": {
     "@openzeppelin/contracts": "^4.8.2",
-    "chai": "^4.3.7",
-    "dotenv": "^16.0.3",
-    "mocha": "^10.2.0"
+    "dotenv": "^16.0.3"
   }
 }
