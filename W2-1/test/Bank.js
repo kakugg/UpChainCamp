@@ -21,7 +21,7 @@ describe("Bank", function () {
 
   it("owner deposit 1", async function () {
     await expect(await bank.connect(owner).deposit({value:1})).not.reverted;
-    console.log('getUserBalance owner',await bank.getUserBalance(owner.address));
+    console.log('getUserBalance owner',await bank.getUserBalancae(owner.address));
     await expect(await bank.getContractBalance()).to.equal(1);
   });
 

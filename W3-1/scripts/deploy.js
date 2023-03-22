@@ -7,12 +7,12 @@
 const hre = require("hardhat");
 
 async function main() {
-  const Teacher = await hre.ethers.getContractFactory("Teacher");
-  const teacher = await Teacher.deploy('Irving');
+  const IrvingToken = await hre.ethers.getContractFactory("IrvingToken");
+  const irvingToken = await IrvingToken.deploy();
 
-  await teacher.deployed();
+  await irvingToken.deployed();
 
-  console.log('deployed to ${teacher.address}');
+  console.log('IrvingToken has deployed,the address is ${irvingToken.address}');
 }
 
 // We recommend this pattern to be able to use async/await everywhere

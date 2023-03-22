@@ -3,6 +3,7 @@ pragma solidity ^0.8.9;
 
 import './IScore.sol';
 import './Student.sol';
+import "hardhat/console.sol";
 
 contract Teacher {
     
@@ -34,6 +35,8 @@ contract Teacher {
         stuObj.addr = address(student);
 
         studentList.push(stuObj);
+
+        console.log('address ',address(student));
 
         return address(student);
     }
